@@ -1,0 +1,91 @@
+.header {
+  border-bottom: 1px solid $border-color;
+
+  &__nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend .container;
+  }
+
+  &__nav--flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin-left: 93px;
+  }
+
+  &__nav-list li {
+    margin: 0 23px;
+  }
+
+  &__nav-link {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.15;
+    color: $dark-grey;
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__nav-link--active {
+    color: $primary-color;
+  }
+
+  &__nav-link--active::after {
+    background-color: $primary-color;
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 4px;
+    top: 46px;
+    border-radius: 2px;
+    left: 0;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &__contact a {
+    margin: 0 25px 0 10px;
+  }
+
+  &__contact-link {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.15;
+    color: #757575;
+  }
+  &__nav-link:hover,
+  &__nav-link:focus,
+  &__contact-link:focus,
+  &__contact-link:hover {
+    color: $primary-color;
+    fill: $primary-color;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__contact-link:focus .header__link-icon,
+  &__contact-link:hover .header__link-icon,
+  &__contact-link:active .header__link-icon {
+    fill: $primary-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link-icon {
+    fill: $light-grey;
+  }
+}

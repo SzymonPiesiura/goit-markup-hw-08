@@ -1,0 +1,47 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.section {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.title-image {
+  text-align: center;
+  padding-top: 94px;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.16;
+  text-align: center;
+}

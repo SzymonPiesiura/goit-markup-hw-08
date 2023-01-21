@@ -1,0 +1,40 @@
+.atuts {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  margin-top: 94px;
+  gap: 30px;
+  @extend .container;
+
+  &__icon-box {
+    width: 270px;
+    height: 120px;
+    background-color: $beige;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    width: 70px;
+  }
+
+  &__tittle {
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: $light-grey;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+    width: 270px;
+    height: 75px;
+  }
+}

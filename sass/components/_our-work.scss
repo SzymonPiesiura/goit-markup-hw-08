@@ -1,0 +1,35 @@
+.our-work {
+  margin-top: 94px;
+  @extend .container;
+  &__container {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0%;
+  }
+
+  &__image {
+    width: 370px;
+    height: 294px;
+    position: relative;
+    z-index: 4;
+  }
+
+  &__title-box {
+    width: 370px;
+    height: 70px;
+    background: $background-dark-transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: $white-color;
+    text-transform: uppercase;
+  }
+}

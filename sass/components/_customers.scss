@@ -1,0 +1,46 @@
+.customer {
+  margin-bottom: 94px;
+
+  &__box {
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+    gap: 30px;
+    @extend .container;
+  }
+
+  &__icon {
+    fill: $icon-color;
+    width: 106px;
+    height: 60px;
+  }
+
+  &__icon-box {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon-box:hover,
+  &__icon-box:focus,
+  &__icon-box:active {
+    border: 1px solid $primary-color;
+    fill: $primary-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon-box:hover .customer__icon,
+  &__icon-box:focus .customer__icon,
+  &__icon-box:active .customer__icon {
+    fill: $primary-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

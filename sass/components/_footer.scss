@@ -1,0 +1,102 @@
+.footer {
+  background: $navy-blue;
+  height: 252px;
+
+  &__flex {
+    display: flex;
+    @extend .container;
+  }
+
+  &__logo-box {
+    margin-top: 60px;
+  }
+
+  &__address {
+    margin-top: 20px;
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__address--style {
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $white-color;
+  }
+
+  &__link--style {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.15;
+    color: $light-grey;
+  }
+
+  &__icon-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+    margin-left: 70px;
+    width: 206px;
+    height: 80px;
+  }
+
+  &__icon {
+    display: flex;
+  }
+
+  &__icon--flex {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__newsletter {
+    margin-top: 72px;
+    margin-left: 78px;
+  }
+
+  &__text {
+    color: $white-color;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+
+  &__newsletter--flex {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  &__newsletter-label {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: none;
+    padding: 15px 16px;
+  }
+
+  &__newsletter-button {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    width: 200px;
+    height: 50px;
+    color: $white-color;
+    fill: $white-color;
+    background: $primary-color;
+    border-color: $primary-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
