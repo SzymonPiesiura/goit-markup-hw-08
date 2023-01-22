@@ -1,31 +1,30 @@
 @media screen and (min-width: $desktop-size) {
   .footer {
-    height: 252px;
-
-    .footer__flex {
-      flex-direction: row;
-    }
-    .footer__icon-box {
-      margin-left: 70px;
-    }
-    .footer__newsletter-label {
-      width: 358px;
-    }
-    .footer__newsletter {
-      margin-left: 78px;
-    }
-    .footer__newsletter--flex {
-      flex-direction: row;
-    }
-    .footer__text {
-      text-align: left;
-    }
-    .footer__logo-box {
-      display: block;
-    }
-    .footer__address {
-      align-items: unset;
-    }
+    max-height: 252px;
+  }
+  .footer__flex {
+    flex-direction: row;
+  }
+  .footer__icon-box {
+    margin-left: 70px;
+  }
+  .footer__newsletter-label {
+    width: 358px;
+  }
+  .footer__newsletter {
+    margin-left: 78px;
+  }
+  .footer__newsletter--flex {
+    flex-direction: row;
+  }
+  .footer__text {
+    text-align: left;
+  }
+  .footer__logo-box {
+    display: block;
+  }
+  .footer__address {
+    align-items: unset;
   }
 }
 
