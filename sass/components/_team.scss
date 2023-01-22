@@ -1,9 +1,10 @@
 @media screen and (min-width: $desktop-size) {
   .team {
     max-height: 708px;
-  }
-  .team__box {
-    flex-direction: row;
+
+    .team__box {
+      flex-direction: row;
+    }
   }
 }
 
