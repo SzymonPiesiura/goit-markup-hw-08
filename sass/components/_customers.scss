@@ -1,8 +1,18 @@
+@media (min-width: $desktop-size) {
+  .customer {
+    &__box {
+      flex-direction: row;
+    }
+  }
+}
+
 .customer {
   margin-bottom: 94px;
 
   &__box {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
     margin-top: 50px;
     gap: 30px;

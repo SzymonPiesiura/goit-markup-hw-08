@@ -3,8 +3,8 @@
     url("../images/background_home.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
+  max-width: 480px;
   margin: auto;
 
   &__slogan {
@@ -16,15 +16,15 @@
 
   &__title {
     font-weight: 900;
-    font-size: 2.75rem;
-    line-height: 1.36;
+    font-size: 1.625rem;
+    line-height: 1.61;
     text-align: center;
     color: $white-color;
-    width: 696px;
-    height: 120px;
+    width: 288px;
+    height: 126px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-top: 200px;
+    margin-top: 118px;
   }
 
   &__button {
@@ -44,5 +44,21 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: url("../images/color_home.png"),
+      url("../images/background_home.jpg");
+    max-width: 1600px;
+    height: 600px;
+
+    &__title {
+      width: 696px;
+      height: 120px;
+      font-size: 2.75rem;
+      margin-top: 200px;
+    }
   }
 }

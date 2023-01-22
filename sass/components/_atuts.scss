@@ -2,6 +2,8 @@
   text-decoration: none;
   list-style: none;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 94px;
   gap: 30px;
   @extend .container;
@@ -36,5 +38,11 @@
     margin-top: 10px;
     width: 270px;
     height: 75px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .atuts {
+    flex-direction: row;
   }
 }

@@ -1,3 +1,9 @@
+@media (max-width: $desktop-size) {
+  .our-work--active {
+    display: none;
+  }
+}
+
 .our-work {
   margin-top: 94px;
   @extend .container;

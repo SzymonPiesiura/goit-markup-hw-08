@@ -1,10 +1,18 @@
+@media (min-width: $desktop-size) {
+  .team {
+    height: 708px;
+  }
+}
+
 .team {
-  height: 708px;
+  height: 2061px;
   background: $beige;
   margin-top: 94px;
 
   &__box {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
     margin-top: 50px;
     gap: 30px;
