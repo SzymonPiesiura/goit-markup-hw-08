@@ -1,3 +1,13 @@
+@media (max-width: $desktop-size) {
+  .header__nav-list--active {
+    display: none;
+
+    .header__contact {
+      display: none;
+    }
+  }
+}
+
 .header {
   border-bottom: 1px solid $border-color;
 

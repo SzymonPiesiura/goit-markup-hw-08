@@ -1,6 +1,10 @@
 @media (min-width: $desktop-size) {
   .team {
     height: 708px;
+
+    .team__box {
+      flex-direction: row;
+    }
   }
 }
 

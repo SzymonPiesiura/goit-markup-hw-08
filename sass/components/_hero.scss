@@ -47,7 +47,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-size) {
   .hero {
     background-image: url("../images/color_home.png"),
       url("../images/background_home.jpg");

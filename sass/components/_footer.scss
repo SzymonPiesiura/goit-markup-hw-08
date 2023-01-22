@@ -1,14 +1,30 @@
 @media (min-width: $desktop-size) {
   .footer {
     height: 252px;
-    &__flex {
+
+    .footer__flex {
       flex-direction: row;
     }
-    &__icon-box {
+    .footer__icon-box {
       margin-left: 70px;
     }
-    &__newsletter-label {
+    .footer__newsletter-label {
       width: 358px;
+    }
+    .footer__newsletter {
+      margin-left: 78px;
+    }
+    .footer__newsletter--flex {
+      flex-direction: row;
+    }
+    .footer__text {
+      text-align: left;
+    }
+    .footer__logo-box {
+      display: block;
+    }
+    .footer__address {
+      align-items: unset;
     }
   }
 }
