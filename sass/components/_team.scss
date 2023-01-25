@@ -1,12 +1,5 @@
-@media screen and (min-width: $desktop-size) {
-  .team {
-    max-height: 708px;
-
-    .team__box {
-      flex-direction: row;
-    }
-  }
-}
+@use "../utils/general";
+@use "../utils/vars";
 
 .team {
   height: 2061px;
@@ -47,5 +40,43 @@
     line-height: 1.18;
     color: $light-grey;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .team {
+    height: 1285px;
+  }
+  .team__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team__image {
+    width: 354px;
+    height: 536px;
+    justify-content: center;
+  }
+
+  .team__departament {
+    margin-top: 10px;
+  }
+
+  .social__icon-flex {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .team {
+    height: 708px;
+  }
+  .team__box {
+    flex-direction: row;
+  }
+  .team__image {
+    width: 270px;
+    height: 428px;
   }
 }

@@ -1,3 +1,6 @@
+@use "../utils/general";
+@use "../utils/vars";
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;

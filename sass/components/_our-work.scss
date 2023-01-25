@@ -1,8 +1,5 @@
-@media (max-width: $desktop-size) {
-  .our-work--active {
-    display: none;
-  }
-}
+@use "../utils/general";
+@use "../utils/vars";
 
 .our-work {
   margin-top: 94px;
@@ -37,5 +34,11 @@
   &__title {
     color: $white-color;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: $desktop-size) {
+  .our-work--active {
+    display: none;
   }
 }

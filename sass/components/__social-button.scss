@@ -1,3 +1,6 @@
+@use "../utils/general";
+@use "../utils/vars";
+
 .social {
   &__icon-flex {
     display: flex;

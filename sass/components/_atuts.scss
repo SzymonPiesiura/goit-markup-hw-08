@@ -1,3 +1,6 @@
+@use "../utils/general";
+@use "../utils/vars";
+
 .atuts {
   text-decoration: none;
   list-style: none;
@@ -38,6 +41,17 @@
     margin-top: 10px;
     width: 270px;
     height: 75px;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .atuts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .atuts__icon-box {
+    width: 354px;
   }
 }
 

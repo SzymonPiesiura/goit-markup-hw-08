@@ -1,11 +1,5 @@
-@media (max-width: $desktop-size) {
-  .header__nav-list--active {
-    display: none;
-  }
-  .header__contact--active {
-    display: none;
-  }
-}
+@use "../utils/general";
+@use "../utils/vars";
 
 .header {
   border-bottom: 1px solid $border-color;
@@ -96,5 +90,14 @@
 
   &__link-icon {
     fill: $light-grey;
+  }
+}
+
+@media (max-width: $desktop-size) {
+  .header__nav-list--active {
+    display: none;
+  }
+  .header__contact--active {
+    display: none;
   }
 }

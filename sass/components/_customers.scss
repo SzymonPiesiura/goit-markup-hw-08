@@ -1,10 +1,5 @@
-@media (min-width: $desktop-size) {
-  .customer {
-    .customer__box {
-      flex-direction: row;
-    }
-  }
-}
+@use "../utils/general";
+@use "../utils/vars";
 
 .customer {
   margin-bottom: 94px;
@@ -52,5 +47,23 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .customer__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .customer__icon-box {
+    width: 226px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .customer__box {
+    flex-direction: row;
   }
 }

@@ -1,4 +1,5 @@
-
+@use "../utils/general";
+@use "../utils/vars";
 
 .portfolio-button {
   display: flex;
@@ -6,7 +7,7 @@
   gap: 8px;
   justify-content: center;
   margin-top: 94px;
-@extend .container;
+  @extend .container;
   &__style {
     font-style: normal;
     font-weight: 500;

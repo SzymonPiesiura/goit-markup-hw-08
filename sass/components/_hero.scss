@@ -1,3 +1,6 @@
+@use "../utils/general";
+@use "../utils/vars";
+
 .hero {
   background-image: url("../images/color_home.png"),
     url("../images/background_home.jpg");
@@ -47,18 +50,29 @@
   }
 }
 
+@media (min-width: $tablet-size) {
+  .hero {
+    max-width: 768px;
+    height: 400px;
+  }
+
+  .hero__title {
+    width: 365px;
+  }
+}
+
 @media (min-width: $desktop-size) {
   .hero {
     background-image: url("../images/color_home.png"),
       url("../images/background_home.jpg");
     max-width: 1600px;
     height: 600px;
+  }
 
-    &__title {
-      width: 696px;
-      height: 120px;
-      font-size: 2.75rem;
-      margin-top: 200px;
-    }
+  .hero__title {
+    width: 696px;
+    height: 120px;
+    font-size: 2.75rem;
+    margin-top: 200px;
   }
 }
