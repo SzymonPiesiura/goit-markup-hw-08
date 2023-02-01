@@ -4,12 +4,12 @@
 .footer {
   background: $navy-blue;
   height: 603px;
-  @extend .container;
 
   &__flex {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @extend .container;
   }
 
   &__logo-box {
@@ -59,6 +59,7 @@
   }
 
   &__newsletter {
+    width: 100%;
     margin-top: 72px;
   }
 
@@ -82,7 +83,9 @@
   }
 
   &__newsletter-label {
-    width: 300px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -126,6 +129,10 @@
     margin-left: 144px;
   }
 
+  .footer__newsletter {
+    margin-left: 78px;
+  }
+
   .footer__newsletter-label {
     width: 450px;
   }
@@ -142,7 +149,7 @@
     margin-left: 70px;
   }
   .footer__newsletter-label {
-    width: 358px;
+    max-width: 358px;
   }
   .footer__newsletter {
     margin-left: 78px;
