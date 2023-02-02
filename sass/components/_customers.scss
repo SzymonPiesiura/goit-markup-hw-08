@@ -1,5 +1,5 @@
-@use "../utils/general";
-@use "../utils/vars";
+@use "../utils/general" as *;
+@use "../utils/vars" as *;
 
 .customer {
   margin-bottom: 94px;

@@ -1,6 +1,5 @@
-@use "../utils/general";
-@use "../utils/vars";
-
+@use "../utils/general" as *;
+@use "../utils/vars" as *;
 .atuts {
   text-decoration: none;
   list-style: none;

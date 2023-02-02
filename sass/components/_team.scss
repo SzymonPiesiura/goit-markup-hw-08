@@ -1,5 +1,5 @@
-@use "../utils/general";
-@use "../utils/vars";
+@use "../utils/general" as *;
+@use "../utils/vars" as *;
 
 .team {
   height: 2061px;

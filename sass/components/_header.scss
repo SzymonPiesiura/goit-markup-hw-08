@@ -1,5 +1,5 @@
-@use "../utils/general";
-@use "../utils/vars";
+@use "../utils/general" as *;
+@use "../utils/vars" as *;
 
 .header {
   border-bottom: 1px solid $border-color;
