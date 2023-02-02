@@ -2,9 +2,10 @@
 @use "../utils/vars" as *;
 
 .team {
-  height: 2061px;
+  height: auto;
   background: $beige;
   margin-top: 94px;
+  padding-bottom: 60px;
 
   &__box {
     display: flex;
@@ -27,6 +28,12 @@
     flex-direction: column;
   }
 
+  &__image-place {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
   &__name {
     font-weight: 500;
     font-size: 1rem;
@@ -45,7 +52,7 @@
 
 @media (min-width: $tablet-size) {
   .team {
-    height: 1285px;
+    height: auto;
   }
   .team__box {
     flex-direction: row;
@@ -59,6 +66,13 @@
     justify-content: center;
   }
 
+  .team__image-place {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-top: -35px;
+  }
+
   .team__departament {
     margin-top: 10px;
   }
@@ -70,7 +84,7 @@
 
 @media (min-width: $desktop-size) {
   .team {
-    height: 708px;
+    height: auto;
   }
   .team__box {
     flex-direction: row;
@@ -78,5 +92,9 @@
   .team__image {
     width: 270px;
     height: 428px;
+  }
+
+  .team__image-place {
+    margin-top: -10px;
   }
 }
