@@ -29,7 +29,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: calc(100% / 2);
   }
 
   &__icon-box:hover,
@@ -53,6 +52,11 @@
 }
 
 @media (min-width: $tablet-size) {
+  .customer {
+    margin: 0 auto;
+    max-width: 768px;
+    margin-bottom: 94px;
+  }
   .customer__box {
     flex-direction: row;
     flex-wrap: wrap;
@@ -67,5 +71,8 @@
 @media (min-width: $desktop-size) {
   .customer__box {
     flex-direction: row;
+  }
+  .customer__icon-box {
+    width: 170px;
   }
 }
