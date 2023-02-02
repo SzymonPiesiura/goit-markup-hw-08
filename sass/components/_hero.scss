@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   height: 400px;
-  max-width: 480px;
+
   margin: auto;
 
   &__slogan {
@@ -52,7 +52,6 @@
 
 @media (min-width: $tablet-size) {
   .hero {
-    max-width: 768px;
     height: 400px;
   }
 
@@ -65,7 +64,7 @@
   .hero {
     background-image: url("../images/color_home.png"),
       url("../images/background_home.jpg");
-    max-width: 1600px;
+
     height: 600px;
   }
 

@@ -12,7 +12,7 @@
   @extend .container;
 
   &__icon-box {
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: $beige;
     border-radius: 4px;
@@ -58,5 +58,8 @@
 @media (min-width: $desktop-size) {
   .atuts {
     flex-direction: row;
+  }
+  .atuts__icon-box {
+    width: 270px;
   }
 }
