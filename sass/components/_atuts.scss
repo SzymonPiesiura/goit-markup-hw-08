@@ -11,7 +11,8 @@
   @extend .container;
 
   &__icon-box {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 120px;
     background-color: $beige;
     border-radius: 4px;
@@ -38,7 +39,8 @@
     color: $light-grey;
     letter-spacing: 0.03em;
     margin-top: 10px;
-    width: 270px;
+    width: 100%;
+    max-width: 450px;
     height: 75px;
   }
 }
@@ -50,7 +52,10 @@
     justify-content: center;
   }
   .atuts__icon-box {
-    width: 354px;
+    max-width: 354px;
+  }
+  .atuts__text {
+    max-width: 354px;
   }
 }
 
@@ -59,6 +64,9 @@
     flex-direction: row;
   }
   .atuts__icon-box {
-    width: 270px;
+    max-width: 270px;
+  }
+  .atuts__text {
+    max-width: 270px;
   }
 }
